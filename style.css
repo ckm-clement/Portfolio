@@ -38,7 +38,7 @@ body, h1, h2, h3, p {
   #home {
     background-color: #f2f2f2;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Stack content vertically */
     align-items: center;
     padding: 6rem 2rem; /* Adjust padding as needed */
   }
@@ -94,9 +94,6 @@ body, h1, h2, h3, p {
     }
   }
   
-  .profile-picture{
-    padding-left:50px;
-  }
   .profile-picture img {
     width: 350px;
     height: 350px;
