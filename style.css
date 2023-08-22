@@ -105,11 +105,69 @@ body, h1, h2, h3, p {
   
   #about {
     background-color: #e0e0e0;
-    width:100%;
-    height:100vh;
+    padding: 3rem 2rem; /* Adjust padding as needed */
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .about-content p {
+    margin-bottom: 1rem;
+  }
+  
+  .about-content ul {
+    list-style: none; /* Remove default list style */
+    margin-left: 2rem;
+    padding-left: 0; /* Remove left padding */
+  }
+  
+  .about-content ul li {
+    margin-bottom: 0.5rem; /* Add some space between items */
+  }
+  
+  .skillset {
+    max-width: 800px;
+    margin: 4rem auto;
+    text-align: center;
+  }
+  
+  .skillset h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .languages, .frameworks, .databases {
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .languages .language-icon,
+  .frameworks .framework-icon,
+  .databases .database-icon {
+    display: inline-block;
+    width: 128px; /* Adjust size as needed */
+    height: 128px; /* Adjust size as needed */
+    border: 2px solid #333;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    margin: 0.5rem; /* Add some spacing between icons */
+  }
+  
+  .languages .language-icon:hover,
+  .frameworks .framework-icon:hover,
+  .databases .database-icon:hover {
+    transform: scale(1.05); /* Add zoom effect on hover */
+    border-color: #007bff; /* Change border color on hover */
   }
   
   #projects {
