@@ -184,6 +184,76 @@ body, h1, h2, h3, p {
     flex-direction: column; /* Stack content vertically */
     align-items: center;
   }
+
+  .project-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .project-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-header p {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .project-box {
+    width: calc(33.33% - 1rem); /* Three boxes in a row */
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid rgb(0,0,0);
+    border-radius: 4px;
+    padding: 1rem;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+  
+  .project-box:hover {
+    transform: scale(1.05); /* Add zoom effect on hover */
+    border-color: #007bff; /* Change border color on hover */
+  }
+  
+  .project-box img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .project-box p {
+
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .project-buttons {
+
+    justify-content: space-between;
+  }
+  
+  .project-buttons a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .project-buttons a:hover {
+    background-color: #0056b3;
+  }
+  
   
   #contact {
     background-color: #c0c0c0;
@@ -270,4 +340,12 @@ body, h1, h2, h3, p {
     flex-direction: column;
     align-items: center;
   }
-}
+  .project-buttons {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .demo-button{
+    margin-top:5px;
+  }
+    
+  }
