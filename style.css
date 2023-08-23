@@ -1,351 +1,366 @@
 /* Reset some default styles */
 body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-  }
-  
-  header {
-    width:100%;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-  }
-  
-  nav ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 2rem;
-  }
-  
-  #home {
-    background-color: #f2f2f2;
-    width:100%;
- 
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center;
-    padding: 6rem 2rem; /* Adjust padding as needed */
-  }
-  
-  .home-content {
-    text-align: center;
-    margin-bottom: 2rem; /* Add some space between content and profile picture */
-  }
-  
-  .home-content h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-  }
-  
-  .typewriter {
-    white-space: nowrap;
-    overflow: hidden;
-    letter-spacing: 2px;
-    margin: 0 auto;
-    animation: typing 3s steps(40), blink-caret 0.75s step-end infinite;
-  }
-  
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  @keyframes blink-caret {
-    from, to {
-      border-right-color: transparent;
-    }
-    50% {
-      border-right-color: #000;
-    }
-  }
-  
-  .wave-hand {
-    display: inline-block;
-    animation: wave 2s infinite; /* Add waving animation */
-  }
-  
-  @keyframes wave {
-    0%, 100% {
-      transform: rotate(0deg);
-    }
+  margin: 0;
+  padding: 0;
+}
 
-    75% {
-      transform: rotate(25deg);
-    }
-  }
-  
-  .profile-picture img {
-    width: 350px;
-    height: 350px;
-    border-radius: 50%;
-    border: 3px solid #333;
-    
-  }
+body {
+  font-family: Arial, sans-serif;
 
-  
-  #about {
-    width:100%;
-    height:100%;
-    background-color: #e0e0e0;
-    padding: 3rem 2rem; /* Adjust padding as needed */
-  }
-  
-  .about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .about-content h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .about-content p {
-    margin-bottom: 1rem;
-  }
-  
-  .about-content ul {
-    list-style: none; /* Remove default list style */
-    margin-left: 2rem;
-    padding-left: 0; /* Remove left padding */
-  }
-  
-  .about-content ul li {
-    margin-bottom: 0.5rem; /* Add some space between items */
-  }
-  
-  .skillset {
-    max-width: 800px;
-    margin: 4rem auto;
-    text-align: center;
-  }
-  
-  .skillset h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
-  }
-  
-  .languages, .frameworks, .databases {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-  }
-  
+}
 
-  .languages .language-icon,
-  .frameworks .framework-icon,
-  .databases .database-icon {
-    display: inline-block;
-    width: 128px; /* Adjust size as needed */
-    height: 128px; /* Adjust size as needed */
-    border: 2px solid #333;
-    border-radius: 4px;
-    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-    margin: 0.5rem; /* Add some spacing between icons */
-  }
+header {
+  width:100%;
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
 
-  .languages .language-icon:hover,
-  .frameworks .framework-icon:hover,
-  .databases .database-icon:hover {
-    transform: scale(1.05); /* Add zoom effect on hover */
-    border-color: #007bff; /* Change border color on hover */
-  }
-  
-  #projects {
-    background-color: #d2d2d2;
-    width:100%;
-    height:100vh;
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center;
-  }
+}
 
-  .project-header {
-    text-align: center;
-    margin-bottom: 2rem;
-  }
-  
-  .project-header h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-  }
-  
-  .project-header p {
-    font-size: 1rem;
-    color: #777;
-  }
-  
-  .project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .project-box {
-    width: calc(33.33% - 1rem); /* Three boxes in a row */
-    background-color: rgba(255, 255, 255, 0);
-    border: 2px solid rgb(0,0,0);
-    border-radius: 4px;
-    padding: 1rem;
-    text-align: center;
-    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
-  }
-  
-  .project-box:hover {
-    transform: scale(1.05); /* Add zoom effect on hover */
-    border-color: #007bff; /* Change border color on hover */
-  }
-  
-  .project-box img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-  }
-  
-  .project-box p {
+nav ul {
+  list-style: none;
+  display: flex;
+}
 
-    margin-bottom: 1rem;
-    color: #555;
-  }
-  
-  .project-buttons {
+nav ul li {
+  margin-right: 20px;
+}
 
-    justify-content: space-between;
-  }
-  
-  .project-buttons a {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .project-buttons a:hover {
-    background-color: #0056b3;
-  }
-  
-  
-  #contact {
-    background-color: #c0c0c0;
-    width:100%;
-    height:100vh;
-    display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center;
-  }
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
 
+section {
+  padding: 2rem;
 
-  /* Larger screens */
-@media (min-width: 992px) {
-  /* Example: Increase font size, adjust padding, etc. */
-  
-  /* For header */
-  header {
-    padding: 2rem;
+}
+
+#home {
+  background-color: #f2f2f2;
+  width:100%;
+
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+  padding: 6rem 2rem; /* Adjust padding as needed */
+}
+
+.home-content {
+  text-align: center;
+  margin-bottom: 2rem; /* Add some space between content and profile picture */
+}
+
+.home-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.typewriter {
+  white-space: nowrap;
+  overflow: hidden;
+  letter-spacing: 2px;
+  margin: 0 auto;
+  animation: typing 3s steps(40), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  /* For sections */
-  section {
-    padding: 4rem;
-  }
-  
-  /* For skillset icons */
-  .languages, .frameworks, .databases {
-    margin: 2rem auto;
+  to {
+    width: 100%;
   }
 }
 
+@keyframes blink-caret {
+  from, to {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #000;
+  }
+}
+
+.wave-hand {
+  display: inline-block;
+  animation: wave 2s infinite; /* Add waving animation */
+}
+
+@keyframes wave {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(25deg);
+  }
+}
+
+.profile-picture img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 3px solid #333;
+  
+}
+
+
+#about {
+  width:100%;
+  height:100%;
+  background-color: #e0e0e0;
+  padding: 3rem 2rem; /* Adjust padding as needed */
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-content p {
+  margin-bottom: 1rem;
+}
+
+.about-content ul {
+  list-style: none; /* Remove default list style */
+  margin-left: 2rem;
+  padding-left: 0; /* Remove left padding */
+}
+
+.about-content ul li {
+  margin-bottom: 0.5rem; /* Add some space between items */
+}
+
+.skillset {
+  max-width: 800px;
+  margin: 4rem auto;
+  text-align: center;
+}
+
+.skillset h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.languages, .frameworks, .databases {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+.languages .language-icon,
+.frameworks .framework-icon,
+.databases .database-icon {
+  display: inline-block;
+  width: 128px; /* Adjust size as needed */
+  height: 128px; /* Adjust size as needed */
+  border: 2px solid #333;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  margin: 0.5rem; /* Add some spacing between icons */
+}
+
+.languages .language-icon:hover,
+.frameworks .framework-icon:hover,
+.databases .database-icon:hover {
+  transform: scale(1.05); /* Add zoom effect on hover */
+  border-color: #007bff; /* Change border color on hover */
+}
+
+#projects {
+  background-color: #d2d2d2;
+  width:100%;
+  height:100vh;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+}
+
+.project-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.project-header p {
+  font-size: 1rem;
+  color: #777;
+}
+
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-box {
+  width: calc(33.33% - 1rem); /* Three boxes in a row */
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid rgb(0,0,0);
+  border-radius: 4px;
+  padding: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.project-box:hover {
+  transform: scale(1.05); /* Add zoom effect on hover */
+  border-color: #007bff; /* Change border color on hover */
+}
+
+.project-box img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.project-box p {
+
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.project-buttons {
+
+  justify-content: space-between;
+}
+
+.project-buttons a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.project-buttons a:hover {
+  background-color: #0056b3;
+}
+
+
+#contact {
+  background-color: #c0c0c0;
+  width:100%;
+  height:100vh;
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  align-items: center;
+}
+
+/* Footer section */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Larger screens */
+@media (min-width: 992px) {
+/* Example: Increase font size, adjust padding, etc. */
+
+/* For header */
+header {
+  padding: 2rem;
+}
+
+/* For sections */
+section {
+  padding: 4rem;
+}
+
+/* For skillset icons */
+.languages, .frameworks, .databases {
+  margin: 2rem auto;
+}
+}
+
+
 /* Medium screens */
 @media (max-width: 991px) {
-  /* Example: Reduce font size, adjust margins, etc. */
-  
-  /* For header */
-  header {
-    padding: 1.5rem;
-  }
-  
-  /* For sections */
-  section {
-    padding: 3rem;
-  }
-  
-  /* For skillset icons */
-  .languages, .frameworks, .databases {
-    margin: 1rem auto;
-  }
+/* Example: Reduce font size, adjust margins, etc. */
+
+/* For header */
+header {
+  padding: 1.5rem;
+}
+
+/* For sections */
+section {
+  padding: 3rem;
+}
+
+/* For skillset icons */
+.languages, .frameworks, .databases {
+  margin: 1rem auto;
+}
 }
 
 /* Small screens */
 @media (max-width: 912px) {
-  /* Example: Further reduce font size, adjust layout, etc. */
+/* Example: Further reduce font size, adjust layout, etc. */
+
+/* For header */
+header {
+  padding: 1rem;
+}
+
+/* For sections */
+section {
+  padding: 2rem;
+}
+.about-content {
+  padding: 1rem; /* Reduce padding for smaller screens */
+}
+
+.about-content h2 {
+  font-size: 1.5rem; /* Reduce font size for heading */
+  margin-bottom: 0.5rem;
+}
+
+.about-content p {
+  font-size: 0.9rem; /* Reduce font size for paragraph */
+  margin-bottom: 0.5rem;
+}
+
+.about-content ul li {
+  font-size: 0.9rem; /* Reduce font size for list items */
+}
+/* For skillset icons */
+.languages, .frameworks, .databases {
+  flex-direction: column;
+  align-items: center;
+}
+.project-buttons {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.demo-button{
+  margin-top:5px;
+}
   
-  /* For header */
-  header {
-    padding: 1rem;
-  }
-  
-  /* For sections */
-  section {
-    padding: 2rem;
-  }
-  .about-content {
-    padding: 1rem; /* Reduce padding for smaller screens */
-  }
-
-  .about-content h2 {
-    font-size: 1.5rem; /* Reduce font size for heading */
-    margin-bottom: 0.5rem;
-  }
-
-  .about-content p {
-    font-size: 0.9rem; /* Reduce font size for paragraph */
-    margin-bottom: 0.5rem;
-  }
-
-  .about-content ul li {
-    font-size: 0.9rem; /* Reduce font size for list items */
-  }
-  /* For skillset icons */
-  .languages, .frameworks, .databases {
-    flex-direction: column;
-    align-items: center;
-  }
-  .project-buttons {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .demo-button{
-    margin-top:5px;
-  }
-    
-  }
+}
