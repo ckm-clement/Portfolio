@@ -1,15 +1,26 @@
 /* Reset some default styles */
-body, h1, h2, h3, p {
+body, h1, h2, h3, p, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  
+ 
+}
+
+body {
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: Arial, sans-serif;
+section {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  
 }
 
 header {
-  width:100%;
+  
   background-color: #333;
   color: #fff;
   padding: 1rem;
@@ -19,7 +30,7 @@ header {
 }
 
 nav ul {
-  list-style: none;
+
   display: flex;
 }
 
@@ -32,26 +43,18 @@ nav ul li a {
   text-decoration: none;
 }
 
-section {
-  padding: 2rem;
-
-}
-
 #home {
   background-color: #f2f2f2;
-  width:100%;
-
   display: flex;
   flex-direction: column; /* Stack content vertically */
   align-items: center;
-  padding: 6rem 2rem; /* Adjust padding as needed */
+  padding: 6rem 0; /* Adjust padding as needed */
 }
 
 .home-content {
   text-align: center;
   margin-bottom: 2rem; /* Add some space between content and profile picture */
 }
-
 .home-content h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
@@ -98,6 +101,7 @@ section {
   }
 }
 
+
 .profile-picture img {
   width: 350px;
   height: 350px;
@@ -106,16 +110,13 @@ section {
   
 }
 
-
 #about {
-  width:100%;
-  height:100%;
   background-color: #e0e0e0;
-  padding: 3rem 2rem; /* Adjust padding as needed */
+  padding: 3rem 0; /* Adjust padding as needed */
 }
 
 .about-content {
-  max-width: 800px;
+  max-width: 600px;
   margin: 0 auto;
   text-align: center;
 }
@@ -130,14 +131,13 @@ section {
 }
 
 .about-content ul {
-  list-style: none; /* Remove default list style */
-  margin-left: 2rem;
-  padding-left: 0; /* Remove left padding */
-}
+  margin-top: -10px;
 
+}
 .about-content ul li {
   margin-bottom: 0.5rem; /* Add some space between items */
 }
+
 
 .skillset {
   max-width: 800px;
@@ -156,7 +156,6 @@ section {
   gap: 1rem;
   margin-bottom: 1rem;
 }
-
 
 .languages .language-icon,
 .frameworks .framework-icon,
@@ -177,19 +176,21 @@ section {
   border-color: #007bff; /* Change border color on hover */
 }
 
+
 #projects {
   background-color: #d2d2d2;
-  width:100%;
-  height:100vh;
   display: flex;
   flex-direction: column; /* Stack content vertically */
   align-items: center;
+  padding: 3rem 0; /* Adjust padding as needed */
+
 }
 
 .project-header {
   text-align: center;
   margin-bottom: 2rem;
 }
+
 
 .project-header h1 {
   font-size: 2.5rem;
@@ -199,7 +200,7 @@ section {
 
 .project-header p {
   font-size: 1rem;
-  color: #777;
+  color: #100e0e;
 }
 
 .project-grid {
@@ -207,8 +208,8 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+ 
 }
-
 .project-box {
   width: calc(33.33% - 1rem); /* Three boxes in a row */
   background-color: rgba(255, 255, 255, 0);
@@ -217,6 +218,7 @@ section {
   padding: 1rem;
   text-align: center;
   transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
 }
 
 .project-box:hover {
@@ -256,16 +258,6 @@ section {
 }
 
 
-#contact {
-  background-color: #c0c0c0;
-  width:100%;
-  height:100vh;
-  display: flex;
-  flex-direction: column; /* Stack content vertically */
-  align-items: center;
-}
-
-/* Footer section */
 footer {
   background-color: #333;
   color: #fff;
@@ -273,92 +265,37 @@ footer {
   padding: 1rem 0;
 }
 
-footer p {
-  margin: 0;
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* Larger screens */
-@media (min-width: 992px) {
-/* Example: Increase font size, adjust padding, etc. */
-
-/* For header */
-header {
-  padding: 2rem;
+.copy {
+  flex: 1; /* Take up available space to center the text */
 }
 
-/* For sections */
-section {
-  padding: 4rem;
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-right:15px;
 }
 
-/* For skillset icons */
-.languages, .frameworks, .databases {
-  margin: 2rem auto;
-}
+.social-icon {
+  width: 30px;
+  height: 30px;
+  /* Add more styling if needed */
 }
 
-
-/* Medium screens */
 @media (max-width: 991px) {
-/* Example: Reduce font size, adjust margins, etc. */
 
-/* For header */
-header {
-  padding: 1.5rem;
-}
-
-/* For sections */
-section {
-  padding: 3rem;
-}
-
-/* For skillset icons */
-.languages, .frameworks, .databases {
-  margin: 1rem auto;
-}
-}
-
-/* Small screens */
-@media (max-width: 912px) {
-/* Example: Further reduce font size, adjust layout, etc. */
-
-/* For header */
-header {
-  padding: 1rem;
-}
-
-/* For sections */
-section {
-  padding: 2rem;
-}
-.about-content {
-  padding: 1rem; /* Reduce padding for smaller screens */
-}
-
-.about-content h2 {
-  font-size: 1.5rem; /* Reduce font size for heading */
-  margin-bottom: 0.5rem;
-}
-
-.about-content p {
-  font-size: 0.9rem; /* Reduce font size for paragraph */
-  margin-bottom: 0.5rem;
-}
-
-.about-content ul li {
-  font-size: 0.9rem; /* Reduce font size for list items */
-}
-/* For skillset icons */
+  /* For skillset icons */
 .languages, .frameworks, .databases {
   flex-direction: column;
   align-items: center;
 }
-.project-buttons {
-  flex-direction: column;
-  justify-content: space-between;
-}
+
 .demo-button{
   margin-top:5px;
 }
-  
 }
