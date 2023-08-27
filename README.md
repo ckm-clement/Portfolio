@@ -16,7 +16,7 @@ The website is built using the following technologies:
 
 - HTML5: Structure of the web pages.
 - CSS3: Styling and layout.
-- JavaScript: For interactive elements and animations.
+- JavaScript: For interactive elements.
 - [GitHub Pages](https://pages.github.com/): Hosting the website on GitHub.
 
 ## Live Website
@@ -25,6 +25,6 @@ You can check out the live version of my portfolio website [here](https://ckm-cl
 
 ## Screenshots
 
-![Home Section](screenshots/home.png)
+![Home Section](../screenshots/home.png)
 ![About Section](/screenshots/about.png)
 ![Projects Section](/screenshots/projects.png)
