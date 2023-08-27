@@ -21,10 +21,10 @@ The website is built using the following technologies:
 
 ## Live Website
 
-You can check out the live version of my portfolio website [here][(https://ckm-clement.github.io/Portfolio/)].
+You can check out the live version of my portfolio website [here](https://ckm-clement.github.io/Portfolio/).
 
 ## Screenshots
 
-![Home Section](/screenshots/home.png)
+![Home Section](screenshots/home.png)
 ![About Section](/screenshots/about.png)
 ![Projects Section](/screenshots/projects.png)
