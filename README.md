@@ -25,6 +25,6 @@ You can check out the live version of my portfolio website [here](https://ckm-cl
 
 ## Screenshots
 
-![Home Section](../screenshots/home.PNG)
+![Home Section](/screenshots/home.PNG)
 ![About Section](/screenshots/about.PNG)
 ![Projects Section](/screenshots/projects.PNG)
