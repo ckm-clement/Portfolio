@@ -28,4 +28,3 @@ You can check out the live version of my portfolio website [here][(https://ckm-c
 ![Home Section](/screenshots/home.png)
 ![About Section](/screenshots/about.png)
 ![Projects Section](/screenshots/projects.png)
-![Contact Section](/screenshots/contact.png)
